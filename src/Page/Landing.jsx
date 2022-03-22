@@ -11,6 +11,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import ProfileView from "./Profile/ProfileView"
 
 const drawerWidth = 240;
 
@@ -36,7 +37,7 @@ class Landing extends Component {
   pageContainer = () => {
     switch (this.state.page) {
       case "Profile":
-        return <h2>ข้อมูลสมาชิก</h2>;
+        return <ProfileView />;
       case "Calculate":
         return <h2>คำนวนการขอสินเชื่อ</h2>;
       default:
